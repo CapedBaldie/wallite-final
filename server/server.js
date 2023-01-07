@@ -233,6 +233,10 @@ app.get("/wallite", (req, res) => {
   res.send("done");
 });
 
+app.get("/wallite/health", (req, res) => {
+  res.send(true);
+})
+
 app.listen(PORT, () => {
   console.log(`Server: http://localhost:${PORT}`);
 });
