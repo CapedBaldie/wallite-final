@@ -42,11 +42,11 @@ const Budget = (props) => {
         body: raw,
         redirect: "follow",
       };
-      // fetch(
-      //   'https://event-calendar.onrender.com/calendar/addEvent',
-      //   requestOptions
-      // )
-      fetch("http://localhost:27017/wallite/addbudget", requestOptions)
+      fetch(
+        'https://wallite-app.onrender.com/wallite/addbudget',
+        requestOptions
+      )
+      // fetch("http://localhost:27017/wallite/addbudget", requestOptions)
         .then((response) => response.json())
         .then((result) => {
           console.log(result);

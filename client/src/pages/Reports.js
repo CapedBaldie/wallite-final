@@ -1,6 +1,12 @@
 import styles from "./Reports.module.css";
+import { expenses, income, balance, Piechart, Linechart } from "../components/Overall";
+import {
+  Button,
+  ChakraProvider,
+  Box,
+} from "@chakra-ui/react";
 
-const Reports = () => {
+const Reports = (props) => {
   return (
     <div className={styles.reports}>
       <div className={styles.spendFreq}>
@@ -15,7 +21,7 @@ const Reports = () => {
             <div className={styles.thisWeek}>This Week</div>
           </div>
         </div>
-        <img className={styles.image2Icon} alt="" src="../image-2@2x.png" />
+        <Box w='100%' h='100%' bg='white'><Linechart data={props.data} accounts={props.accounts} /></Box>
       </div>
       <div className={styles.accountExpenseParent}>
         <div className={styles.accountExpense}>
@@ -30,7 +36,7 @@ const Reports = () => {
               <div className={styles.thisWeek}>This Week</div>
             </div>
           </div>
-          <img className={styles.image3Icon} alt="" src="../image-3@2x.png" />
+          <Box w='100%' h='100%' display='flex' justifyContent='center' alignItems='center'>Coming Soon</Box>
         </div>
         <div className={styles.summary}>
           <div className={styles.expenseByCategoryParent}>
@@ -46,12 +52,7 @@ const Reports = () => {
           </div>
           <div className={styles.pieChartWrapper}>
             <div className={styles.pieChart}>
-              <div className={styles.pieChart1} />
-              <img
-                className={styles.image1Icon}
-                alt=""
-                src="../image-1@2x.png"
-              />
+            <Piechart data={props.data} categories={props.categories} />
             </div>
           </div>
         </div>

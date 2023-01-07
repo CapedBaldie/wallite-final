@@ -26,12 +26,11 @@ const NewAcc = (props) => {
         body: raw,
         redirect: "follow",
       };
-      // fetch(
-      //   'https://event-calendar.onrender.com/calendar/addEvent',
-      //   requestOptions
-      // )
-      fetch("http://localhost:27017/wallite/addaccount", requestOptions)
-        .then((response) => response.json())
+      // fetch("http://localhost:27017/wallite/addaccount", requestOptions)
+      fetch(
+        'https://wallite-app.onrender.com/wallite/addaccount',
+        requestOptions
+      ) .then((response) => response.json())
         .then((result) => {
           console.log(result);
           props.setNA(props.nA + 1);

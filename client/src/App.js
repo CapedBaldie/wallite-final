@@ -152,8 +152,8 @@ function App() {
       redirect: 'follow',
     };
 
-    //fetch('https://event-calendar.onrender.com/calendar/getDay', requestOptions)
-    fetch('http://localhost:27017/wallite/userdata', requestOptions)
+    fetch('https://wallite-app.onrender.com/wallite/userdata', requestOptions) 
+    // fetch('http://localhost:27017/wallite/userdata', requestOptions)
       .then(response => response.json())
       .then(result => {
         setResp(result);
@@ -189,7 +189,7 @@ function App() {
             {tabN == "transactions" && (<Transactions setNT={setNT} nT={nT} accounts={accounts} categories={categories} data={data} />)}
             {tabN == "accounts" && (<Accounts setNA={setNA} nA={nA} accounts={accounts} />)}
             {tabN == "tags" && (<Tags />)}
-            {tabN == "reports" && (<Reports />)}
+            {tabN == "reports" && (<Reports data={data} accounts={accounts} categories={categories}/>)}
             {tabN == "budget" && (<Budget setNB={setNB} nB={nB} budgets={budgets} categories={categories} data={data} />)}
             {tabN == "settings" && (<Settings />)}
           </Box>

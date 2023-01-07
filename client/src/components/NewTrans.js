@@ -60,12 +60,11 @@ const NewTrans = (props) => {
         body: raw,
         redirect: "follow",
       };
-      // fetch(
-      //   'https://event-calendar.onrender.com/calendar/addEvent',
-      //   requestOptions
-      // )
-      fetch("http://localhost:27017/wallite/addtransaction", requestOptions)
-        .then((response) => response.json())
+      // fetch("http://localhost:27017/wallite/addtransaction", requestOptions)
+      fetch(
+        'https://wallite-app.onrender.com/wallite/addtransaction',
+        requestOptions
+      ) .then((response) => response.json())
         .then((result) => {
           console.log(result);
           props.setNT(props.nT + 1);
@@ -92,12 +91,11 @@ const NewTrans = (props) => {
         body: raw1,
         redirect: "follow",
       };
-      // fetch(
-      //   'https://event-calendar.onrender.com/calendar/addEvent',
-      //   requestOptions
-      // )
-      fetch("http://localhost:27017/wallite/updateAccount", requestOptions)
-        .then((response) => response.json())
+      // fetch("http://localhost:27017/wallite/updateAccount", requestOptions)
+      fetch(
+        'https://wallite-app.onrender.com/wallite/updateAccount',
+        requestOptions
+      ) .then((response) => response.json())
         .then((result) => {
           console.log(result);
         })
