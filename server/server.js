@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== "production") {
 
 const PORT = process.env.PORT || 27017;
 const CONNECTION_URI =
-  /*process.env.MONGODB_URI ||*/ "mongodb://localhost:27017/wallite";
+  process.env.MONGODB_URI || "mongodb://localhost:27017/wallite";
 
 mongoose.set("strictQuery", true);
 const { Schema } = mongoose;
@@ -213,8 +213,8 @@ app.get("/wallite", (req, res) => {
       },
     ],
     accounts: [
-      { name: "Account 1", bal: "26883", tType: "credit" },
-      { name: "Account 2", bal: "246883", tType: "savings" },
+      { name: "Account 1", bal: "2000", tType: "credit" },
+      { name: "Account 2", bal: "5000", tType: "savings" },
     ],
     budgets: [
       {
