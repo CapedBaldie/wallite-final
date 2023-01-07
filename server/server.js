@@ -176,7 +176,7 @@ app.post("/wallite/updateAccount", (req, res) => {
   );
 });
 
-app.get("/wallite", (req, res) => {
+app.get("/wallite/makeuser", (req, res) => {
   const newTrans = new Transaction({
     user: "Saarang",
     categories: [
