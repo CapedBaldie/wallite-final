@@ -1,0 +1,224 @@
+.spendFrequency {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 182px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.arrowDropDownIcon,
+.thisWeek {
+  position: absolute;
+  top: 10px;
+  left: 87px;
+  width: 24px;
+  height: 24px;
+}
+.thisWeek {
+  top: 0;
+  left: 0;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 94px;
+  height: 38px;
+}
+.arrowDropDownParent {
+  position: relative;
+  width: 111px;
+  height: 38px;
+  flex-shrink: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.spendFrequencyParent {
+  align-self: stretch;
+  border-radius: var(--br-sm) var(--br-sm) 0 0;
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xs) var(--padding-sm)
+    var(--padding-4xs);
+  align-items: center;
+  justify-content: space-between;
+}
+.image2Icon,
+.spendFreq {
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.image2Icon {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 391px;
+  object-fit: cover;
+}
+.spendFreq {
+  border-radius: var(--br-sm);
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.accountsSummary,
+.image3Icon {
+  position: relative;
+  flex-shrink: 0;
+}
+.accountsSummary {
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 211px;
+  height: 40px;
+}
+.image3Icon {
+  align-self: stretch;
+  max-width: 100%;
+  overflow: hidden;
+  height: 267px;
+  object-fit: cover;
+}
+.accountExpense {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.expenseByCategory {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 228px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.expenseByCategoryParent {
+  border-radius: var(--br-sm) var(--br-sm) 0 0;
+  background-color: var(--color-gray-100);
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xs) var(--padding-sm)
+    var(--padding-4xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.pieChart1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-400);
+}
+.image1Icon,
+.pieChart,
+.pieChart1 {
+  width: 250px;
+  height: 250px;
+}
+.image1Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.pieChart {
+  position: relative;
+  flex-shrink: 0;
+}
+.pieChartWrapper,
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pieChartWrapper {
+  align-self: stretch;
+  flex: 1;
+  justify-content: space-between;
+}
+.summary {
+  border-radius: var(--br-sm);
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  height: 430px;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+}
+.accountExpenseParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-2xl);
+}
+.reports {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12var (--padding-5xs) 5px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1200px) {
+  .spendFreq {
+    width: 810px;
+  }
+  .accountExpense {
+    width: 810px;
+    flex: unset;
+    align-self: stretch;
+  }
+  .accountExpenseParent {
+    flex-direction: column;
+  }
+  .reports {
+    width: 970px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .spendFreq {
+    width: 760px;
+  }
+  .accountExpense {
+    width: 760px;
+    flex: unset;
+    align-self: stretch;
+  }
+  .accountExpenseParent {
+    flex-direction: column;
+    padding-left: var(--padding-5xs);
+    padding-right: var(--padding-5xs);
+    box-sizing: border-box;
+  }
+  .reports {
+    width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,30 @@
+.thisMonth,
+.thisWeek {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 94px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.thisMonth {
+  width: 108px;
+}
+.weekMonthDropdown {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md) var(--padding-5xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}

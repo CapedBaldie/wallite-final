@@ -1,0 +1,15 @@
+.slide1693Child {
+  position: absolute;
+  top: 100px;
+  left: 340px;
+  background-color: #fdfdfd;
+  width: 1550px;
+  height: 950px;
+}
+.slide1693 {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+}

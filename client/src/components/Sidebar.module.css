@@ -1,0 +1,268 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.darhboardIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: 909090;
+}
+.darhboardParent,
+.dashboard {
+  display: flex;
+  align-items: center;
+}
+.dashboard {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  color: var(--color-gray-500);
+  text-align: left;
+  width: 135px;
+  height: 19.21px;
+  flex-shrink: 0;
+}
+.darhboardParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-6xs) var(--padding-md);
+  background-color: transparent;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  mix-blend-mode: normal;
+}
+.darhboardParent:hover .dashboard {
+  mix-blend-mode: normal;
+  color: var(--color-gray-800);
+}
+.darhboardParent:hover .darhboardIcon {
+  color: 141326;
+}
+.darhboardParent:focus .dashboard {
+  color: var(--color-gray-800);
+}
+.transactionIcon,
+.transactions {
+  position: relative;
+  width: 18px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.transactions {
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  color: var(--color-gray-500);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 19.21px;
+}
+.transactionParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  mix-blend-mode: normal;
+  color: 909090;
+}
+.transactionParent:hover {
+  width: 250px;
+}
+.transactionParent:hover .transactions {
+  color: var(--color-gray-800);
+}
+.transactionParent:focus {
+  color: 141326;
+}
+.transactionParent:focus .transactions {
+  color: var(--color-gray-800);
+}
+.ecommercebalanceIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.ecommercebalanceParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-2xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+  mix-blend-mode: normal;
+  color: 909090;
+}
+.ecommercebalanceParent:hover .transactions {
+  color: var(--color-gray-800);
+}
+.ecommercebalanceParent:focus .transactions {
+  color: var(--color-gray-800);
+}
+.ecommercepriceTagRotateIcon {
+  position: relative;
+  width: 18px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.ecommercepriceTagRotateParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-md);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  mix-blend-mode: normal;
+  color: 909090;
+}
+.ecommercepriceTagRotateParent:hover,
+.lineUpParent:hover {
+  color: 141326;
+}
+.ecommercepriceTagRotateParent:hover .transactions {
+  color: var(--color-gray-800);
+}
+.ecommercepriceTagRotateParent:focus .transactions {
+  color: var(--color-gray-800);
+}
+.lineUpIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.lineUpParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-6xs) var(--padding-md);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  mix-blend-mode: normal;
+  color: 909090;
+}
+.lineUpParent:hover .transactions {
+  color: var(--color-gray-800);
+}
+.lineUpParent:focus .transactions {
+  color: var(--color-gray-800);
+}
+.interfaceaddCircleIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  color: currentcolor;
+}
+.interfaceaddCircleParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-md);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  mix-blend-mode: normal;
+  color: 909090;
+}
+.interfaceaddCircleParent:hover {
+  color: 141326;
+}
+.interfaceaddCircleParent:hover .transactions {
+  color: var(--color-gray-800);
+}
+.interfaceaddCircleParent:focus .transactions {
+  color: var(--color-gray-800);
+}
+.vectorIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.vectorParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-md);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  mix-blend-mode: normal;
+  color: 909090;
+}
+.vectorParent:hover {
+  color: 141326;
+}
+.vectorParent:hover .transactions {
+  color: var(--color-gray-800);
+}
+.vectorParent:focus .transactions {
+  color: var(--color-gray-800);
+}
+.sidebar {
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 100%;
+  margin-top: 70px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px var(--padding-xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 36px;
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+}
+.sidebar.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}

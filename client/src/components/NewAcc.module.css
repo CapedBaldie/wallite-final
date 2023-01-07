@@ -1,0 +1,132 @@
+.accountName,
+.creditCardDuotoneIcon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.accountName {
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 162px;
+  height: 25px;
+}
+.inputChild {
+  background-color: transparent;
+  align-self: stretch;
+  position: relative;
+}
+.input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.account,
+.div {
+  display: flex;
+  flex-direction: row;
+}
+.account {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.div {
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-2xl);
+}
+.bookmarkDuotoneChild {
+  position: absolute;
+  height: 74.7%;
+  width: 69%;
+  top: 11.33%;
+  right: 15.5%;
+  bottom: 13.97%;
+  left: 15.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.input2,
+.type {
+  display: flex;
+  justify-content: flex-start;
+}
+.input2 {
+  width: 330px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.type {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-2xs);
+}
+.newAcc,
+.save,
+.save1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.save1 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  text-align: center;
+  width: 70px;
+  height: 34px;
+  flex-shrink: 0;
+}
+.newAcc,
+.save {
+  border-radius: var(--br-sm);
+  overflow: hidden;
+}
+.save {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-5xl);
+  background-color: var(--color-gray-800);
+  align-self: stretch;
+  flex-direction: row;
+}
+.newAcc {
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  width: 1000px;
+  flex-direction: column;
+  padding: var(--padding-4xl) var(--padding-7xl);
+  box-sizing: border-box;
+  gap: var(--gap-2xl);
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 768px) {
+  .account {
+    flex: unset;
+    align-self: stretch;
+  }
+  .div {
+    flex-direction: column;
+  }
+  .newAcc {
+    width: 750px;
+  }
+}

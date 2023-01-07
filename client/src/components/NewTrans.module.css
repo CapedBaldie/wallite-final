@@ -1,0 +1,227 @@
+.title1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 162px;
+  height: 25px;
+  flex-shrink: 0;
+}
+.titleChild {
+  background-color: transparent;
+  align-self: stretch;
+  position: relative;
+}
+.title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.category1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.expandDownChild {
+  position: absolute;
+  height: 33.84%;
+  width: 55.89%;
+  top: 34.55%;
+  right: 22.05%;
+  bottom: 31.61%;
+  left: 22.05%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.expandDown {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.category,
+.div,
+.div1 {
+  display: flex;
+  flex-direction: row;
+}
+.category {
+  flex: 1;
+  border-radius: var(--br-sm);
+  background-color: var(--color-gray-800);
+  height: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-white);
+}
+.div,
+.div1 {
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-2xl);
+}
+.div1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+}
+.creditCardDuotoneIcon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.inputChild {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-sm);
+  max-width: 100%;
+  overflow: hidden;
+  height: 50px;
+  flex-shrink: 0;
+}
+.account,
+.input {
+  display: flex;
+  justify-content: flex-start;
+}
+.input {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.account {
+  width: 405px;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-2xs);
+}
+.inputItem {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-sm);
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  box-sizing: border-box;
+  height: 50px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-2xl);
+}
+.input2 {
+  flex: 1;
+}
+.day,
+.div3 {
+  flex-direction: row;
+  align-items: flex-end;
+}
+.day {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.div3 {
+  align-self: stretch;
+  justify-content: center;
+  gap: 33px;
+}
+.div3,
+.save1,
+.to {
+  display: flex;
+}
+.to {
+  width: 400px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.save1 {
+  position: relative;
+  font-size: var(--font-size-md);
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.newTrans,
+.save {
+  border-radius: var(--br-sm);
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+}
+.save {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-5xl);
+  background-color: var(--color-gray-800);
+  width: 100px;
+  height: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.newTrans {
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  width: 1000px;
+  flex-direction: column;
+  padding: var(--padding-4xl) var(--padding-7xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xl);
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 768px) {
+  .category,
+  .title {
+    flex: unset;
+    align-self: stretch;
+  }
+  .div,
+  .div2 {
+    flex-direction: column;
+  }
+  .day {
+    flex: unset;
+    align-self: stretch;
+  }
+  .div3 {
+    flex-direction: column;
+  }
+  .newTrans {
+    width: 700px;
+  }
+}

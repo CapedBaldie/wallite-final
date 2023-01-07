@@ -1,0 +1,94 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-400);
+  width: 40px;
+  height: 40px;
+}
+.bagAltLightIcon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+}
+.account1,
+.rectangleParent,
+.transactionName {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.account1,
+.transactionName {
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 20px;
+}
+.account1 {
+  font-size: var(--font-size-2xs);
+  color: var(--color-gray-600);
+}
+.transactionNameParent {
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.frameParent,
+.rs123321,
+.thNov2022 {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameParent {
+  width: 195px;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.rs123321,
+.thNov2022 {
+  position: relative;
+  letter-spacing: 0.02em;
+  width: 95px;
+  height: 20px;
+}
+.rs123321 {
+  font-weight: 600;
+}
+.thNov2022 {
+  font-size: var(--font-size-2xs);
+  color: var(--color-gray-600);
+}
+.rs123321Parent,
+.transaction {
+  display: flex;
+  justify-content: space-between;
+}
+.rs123321Parent {
+  height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  color: var(--color-red-100);
+}
+.transaction {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-5xs);
+  align-items: center;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}

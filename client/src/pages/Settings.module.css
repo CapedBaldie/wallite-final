@@ -1,0 +1,146 @@
+.settings1 {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+.currency1,
+.head {
+  display: flex;
+  align-items: center;
+}
+.head {
+  align-self: stretch;
+  border-radius: var(--br-sm) var(--br-sm) 0 0;
+  background-color: var(--color-gray-100);
+  height: 70px;
+  flex-shrink: 0;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-2xl);
+  box-sizing: border-box;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+.currency1 {
+  letter-spacing: 0.02em;
+  width: 98px;
+  height: 30px;
+}
+.arrowDropDownIcon,
+.currency1,
+.rupee {
+  position: relative;
+  flex-shrink: 0;
+}
+.rupee {
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  width: 94px;
+  height: 30px;
+}
+.arrowDropDownIcon {
+  width: 24px;
+  height: 24px;
+}
+.currency,
+.rupeeParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rupeeParent {
+  height: 30px;
+  justify-content: flex-start;
+  font-size: var(--font-size-sm);
+}
+.currency {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-xs) var(--padding-lg);
+  justify-content: space-between;
+}
+.language1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  width: 107px;
+  flex-shrink: 0;
+}
+.expandRightWrapper,
+.language1,
+.updateProfile {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.updateProfile {
+  position: relative;
+  letter-spacing: 0.02em;
+  width: 157px;
+  flex-shrink: 0;
+}
+.expandRightWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.headParent,
+.settings {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.headParent {
+  align-self: stretch;
+  border-radius: var(--br-sm);
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-2xs);
+}
+.settings {
+  position: relative;
+  background-color: var(--color-gray-300);
+  width: 100%;
+  height: 950px;
+  padding: 0 177px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1200px) {
+  .headParent {
+    width: 950px;
+    padding: 0;
+  }
+  .settings {
+    width: 970px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headParent {
+    width: 700px;
+  }
+  .settings {
+    width: 768px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headParent {
+    width: 400px;
+    padding: 0;
+  }
+  .settings {
+    width: 400px;
+    padding: 0;
+  }
+}
